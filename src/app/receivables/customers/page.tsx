@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+
 import { 
   Search, 
   Filter, 
@@ -140,7 +141,8 @@ export default function CustomersPage() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {/* Search and Filters */}
+
+      {/* Search and Filters */}
         <div className="card mb-8">
           <div className="flex flex-col sm:flex-row gap-4">
             <div className="flex-1">
