@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-
+// import ReceivablesLayout from '@/components/ReceivablesLayout';
 import { 
   Search, 
   Filter, 
@@ -16,7 +16,11 @@ import {
   MoreHorizontal,
   Edit,
   Trash2,
-  Eye
+  Eye,
+  BarChart3,
+  Users,
+  FileText,
+  CreditCard
 } from 'lucide-react';
 
 // Mock customer data
@@ -137,6 +141,30 @@ export default function CustomersPage() {
               Add Customer
             </button>
           </div>
+        </div>
+      </div>
+
+      {/* Sub Navigation */}
+      <div className="bg-white border-b border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <nav className="flex space-x-8">
+            <a href="/receivables" className="flex items-center space-x-2 py-4 px-1 border-b-2 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 font-medium text-sm">
+              <BarChart3 className="h-4 w-4" />
+              <span>Dashboard</span>
+            </a>
+            <a href="/receivables/customers" className="flex items-center space-x-2 py-4 px-1 border-b-2 border-[#0ea5e9] text-[#0ea5e9] font-medium text-sm">
+              <Users className="h-4 w-4" />
+              <span>Customers</span>
+            </a>
+            <a href="/receivables/invoices" className="flex items-center space-x-2 py-4 px-1 border-b-2 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 font-medium text-sm">
+              <FileText className="h-4 w-4" />
+              <span>Invoices</span>
+            </a>
+            <a href="/receivables/payments" className="flex items-center space-x-2 py-4 px-1 border-b-2 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 font-medium text-sm">
+              <CreditCard className="h-4 w-4" />
+              <span>Payments</span>
+            </a>
+          </nav>
         </div>
       </div>
 

@@ -16,7 +16,8 @@ import {
   User,
   Bell,
   Search,
-  CreditCard
+  CreditCard,
+  Building2
 } from 'lucide-react';
 
 const navigation = [
@@ -24,6 +25,7 @@ const navigation = [
   { name: 'Invoices', href: '/invoices', icon: FileText },
   { name: 'Cash Flow', href: '/cashflow', icon: TrendingUp },
   { name: 'Receivables', href: '/receivables', icon: CreditCard },
+  { name: 'Payables', href: '/payables', icon: Building2 },
   { name: 'AI Assistant', href: '/ai-assistant', icon: Brain },
   { name: 'Analytics', href: '/analytics', icon: BarChart3 },
   { name: 'Settings', href: '/settings', icon: Settings },
