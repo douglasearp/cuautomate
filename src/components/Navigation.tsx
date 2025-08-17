@@ -15,13 +15,15 @@ import {
   X,
   User,
   Bell,
-  Search
+  Search,
+  CreditCard
 } from 'lucide-react';
 
 const navigation = [
   { name: 'Dashboard', href: '/dashboard', icon: Home },
   { name: 'Invoices', href: '/invoices', icon: FileText },
   { name: 'Cash Flow', href: '/cashflow', icon: TrendingUp },
+  { name: 'Receivables', href: '/receivables', icon: CreditCard },
   { name: 'AI Assistant', href: '/ai-assistant', icon: Brain },
   { name: 'Analytics', href: '/analytics', icon: BarChart3 },
   { name: 'Settings', href: '/settings', icon: Settings },
