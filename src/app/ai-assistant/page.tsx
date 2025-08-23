@@ -55,18 +55,21 @@ const mockConversation = [
 
 const mockVoiceCommands = [
   {
+    // eslint-disable-next-line react/no-unescaped-entities
     phrase: "Hey PayOnward, show me today's cash flow",
     action: 'navigate_cashflow_today',
     confidence: 0.95,
     alternatives: ['Display today\'s financial position', 'Current cash situation']
   },
   {
+    // eslint-disable-next-line react/no-unescaped-entities
     phrase: "Send payment reminders to overdue customers",
     action: 'execute_overdue_reminders',
     parameters: { days_overdue: 'any', send_immediately: true },
     confirmation: 'Found 3 overdue invoices. Send reminders now?'
   },
   {
+    // eslint-disable-next-line react/no-unescaped-entities
     phrase: "Create invoice for ABC Company",
     action: 'create_invoice',
     parameters: { customer: 'ABC Company' },
@@ -404,7 +407,7 @@ export default function AIAssistantPage() {
               <div className="space-y-3">
                 {mockVoiceCommands.map((command, index) => (
                   <div key={index} className="p-3 bg-gray-50 rounded-lg">
-                    <p className="text-sm font-medium text-gray-900 mb-1">"{command.phrase}"</p>
+                    <p className="text-sm font-medium text-gray-900 mb-1">&quot;{command.phrase}&quot;</p>
                     <p className="text-xs text-gray-600">{command.confirmation}</p>
                   </div>
                 ))}

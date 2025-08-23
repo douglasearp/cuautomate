@@ -532,7 +532,7 @@ export default function CashFlowPage() {
                       </div>
                       <div className="flex items-center space-x-2">
                         <span className="text-xs text-gray-600">
-                          {Math.round(suggestion.successProbability * 100)}% success rate
+                          {Math.round((suggestion.successProbability || 0) * 100)}% success rate
                         </span>
                         <button className="text-xs text-[#2D5016] hover:underline">
                           Implement

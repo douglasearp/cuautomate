@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import { 
   Plus, 
   Search, 
@@ -21,7 +22,8 @@ import {
   Settings,
   BarChart3,
   Users,
-  CreditCard
+  CreditCard,
+  Activity
 } from 'lucide-react';
 
 // Mock data from specifications
@@ -298,6 +300,9 @@ export default function InvoicesPage() {
                         <button className="p-1 hover:bg-gray-100 rounded">
                           <Edit className="h-4 w-4 text-gray-600" />
                         </button>
+                        <Link href={`/receivables/invoices/${invoice.id}/activities`} className="p-1 hover:bg-gray-100 rounded">
+                          <Activity className="h-4 w-4 text-[#0ea5e9]" />
+                        </Link>
                         {invoice.status === 'draft' && (
                           <button className="p-1 hover:bg-gray-100 rounded">
                             <Send className="h-4 w-4 text-gray-600" />

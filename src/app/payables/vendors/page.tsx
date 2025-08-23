@@ -150,7 +150,7 @@ const mockVendors = [
 export default function VendorsPage() {
   const [searchTerm, setSearchTerm] = useState('');
   const [statusFilter, setStatusFilter] = useState('all');
-  const [selectedVendor, setSelectedVendor] = useState(null);
+  const [selectedVendor, setSelectedVendor] = useState<any>(null);
 
   const filteredVendors = mockVendors.filter(vendor => {
     const matchesSearch = vendor.companyName.toLowerCase().includes(searchTerm.toLowerCase()) ||
