@@ -63,7 +63,8 @@ cuautomate/
 │   ├── app/                     # Next.js App Router pages
 │   │   ├── page.tsx            # Landing page
 │   │   ├── dashboard/          # Main dashboard
-│   │   ├── invoices/           # Invoice management
+│   │   ├── receivables/        # Receivables (customers, invoices, payments in)
+│   │   ├── payables/           # Payables (bills, vendors, approvals, payments out)
 │   │   ├── cashflow/           # Cash flow analytics
 │   │   ├── ai-assistant/       # AI chat interface
 │   │   ├── analytics/          # Business intelligence
@@ -109,7 +110,13 @@ cuautomate/
 - Quick action buttons
 - Recent activity feed
 
-### Invoices (`/invoices`)
+### Receivables (`/receivables`)
+- Receivables dashboard and KPIs
+- Customers (`/receivables/customers`)
+- Invoices (`/receivables/invoices`)
+- Payments In (`/receivables/payments`)
+
+### Receivables - Invoices (`/receivables/invoices`)
 - Invoice list with filtering and search
 - AI-powered template suggestions
 - Line item recommendations
