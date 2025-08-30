@@ -6,8 +6,6 @@ import { usePathname } from 'next/navigation';
 import { 
   Home, 
   BarChart3, 
-  FileText, 
-  DollarSign, 
   TrendingUp, 
   Brain, 
   Settings, 
@@ -22,7 +20,6 @@ import {
 
 const navigation = [
   { name: 'Dashboard', href: '/dashboard', icon: Home },
-  { name: 'Invoices', href: '/invoices', icon: FileText },
   { name: 'Cash Flow', href: '/cashflow', icon: TrendingUp },
   { name: 'Receivables', href: '/receivables', icon: CreditCard },
   { name: 'Payables', href: '/payables', icon: Building2 },
